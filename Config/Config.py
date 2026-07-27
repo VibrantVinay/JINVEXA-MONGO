@@ -251,3 +251,15 @@ class Config:
                     f.writelines(lines)
         except Exception as e:
             print(f"⚠️ Could not update .env file: {e}")
+
+    def get_storage_type(self) -> str:
+        """Get the current storage backend type ('json' or 'mongodb')."""
+        return os.getenv("STORAGE_TYPE", "json").lower()
+
+    def get_mongo_uri(self) -> str:
+        """Get the MongoDB connection URI from environment or default to local."""
+        return os.getenv("MONGODB_URI", "mongodb://localhost:27017")
+
+    def get_mongo_db_name(self) -> str:
+        """Get the target MongoDB database name."""
+        return os.getenv("MONGODB_DB_NAME", "jinvexa_db")
