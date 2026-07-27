@@ -1,0 +1,25 @@
+# AI
+ollama
+
+# Environment Variables
+python-dotenv
+
+# YouTube Transcript
+youtube-transcript-api
+
+# Website Parser
+playwright
+beautifulsoup4
+lxml
+trafilatura
+requests
+
+# Document Parser
+PyMuPDF
+python-docx
+
+# HTML Parsing
+readability-lxml
+markdownify
+
+edge-tts
